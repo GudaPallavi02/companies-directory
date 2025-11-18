@@ -1,0 +1,31 @@
+
+[
+  {
+    "id": 1,
+    "name": "Frontlines Media",
+    "location": "New York",
+    "industry": "Media",
+    "employees": 500
+  },
+  {
+    "id": 2,
+    "name": "Innovate Solutions",
+    "location": "San Francisco",
+    "industry": "Tech",
+    "employees": 150
+  },
+  {
+    "id": 3,
+    "name": "Global Manufacturing Co.",
+    "location": "Chicago",
+    "industry": "Manufacturing",
+    "employees": 2500
+  },
+  {
+    "id": 4,
+    "name": "East Coast Digital",
+    "location": "New York",
+    "industry": "Tech",
+    "employees": 80
+  }
+]
