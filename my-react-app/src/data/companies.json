@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Frontlines Media",
+    "industry": "Media",
+    "location": "New York",
+    "employees": 500
+  },
+  {
+    "id": 2,
+    "name": "Tech Solutions Corp",
+    "industry": "Technology",
+    "location": "San Francisco",
+    "employees": 1200
+  },
+  {
+    "id": 3,
+    "name": "Global Retail Hub",
+    "industry": "Retail",
+    "location": "New York",
+    "employees": 8000
+  },
+  {
+    "id": 4,
+    "name": "Innovate Labs",
+    "industry": "Biotech",
+    "location": "Boston",
+    "employees": 350
+  },
+  {
+    "id": 5,
+    "name": "Blue Sky Marketing",
+    "industry": "Marketing",
+    "location": "San Francisco",
+    "employees": 150
+  }
+]

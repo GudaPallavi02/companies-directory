@@ -1,0 +1,15 @@
+.companyList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.company-card {
+  width: 600px;
+  border: 1px solid #ccc;
+  align-items: center;
+  padding: 20px;
+  border-radius: 4px;
+}
