@@ -10,7 +10,7 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   // NOTE: Changed searchItem back to searchTerm for consistency if you followed the previous guide, but searchItem is fine too.
-  const [searchItem, setSearchTerm] = useState(''); 
+  const [searchTerm, setSearchTerm] = useState(''); 
   const [locationFilter, setLocationFilter] = useState('All');
   const [sortCriteria, setSortCriteria] = useState('nameAsc');
 
@@ -51,9 +51,9 @@ function App() {
     let list = companies;
 
     // 1. Filtering by Search Term
-    if (searchItem) {
+    if (searchTerm) {
       list = list.filter(company =>
-        company.name.toLowerCase().includes(searchItem.toLowerCase())
+        company.name.toLowerCase().includes(searchTerm.toLowerCase())
       );
     }
     
@@ -80,7 +80,7 @@ function App() {
       }
     });
     return sortedList;
-  }, [companies, searchItem, locationFilter, sortCriteria]); // Dependencies
+  }, [companies, searchTerm, locationFilter, sortCriteria]); // Dependencies
 
   return (
     <div className='container' style={{ backgroundColor:'white', border: '2px solid blue'}}>
@@ -98,7 +98,7 @@ function App() {
         <input 
           type="text"
           placeholder="Search by Company name..."
-          value={searchItem}
+          value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           style={{ padding: '8px', flexGrow: 1 }}
         />
@@ -127,9 +127,9 @@ function App() {
         </select>
       </div>
       
-      <p>Showing **{filteredAndSortedCompanies.length}** company(s) out of {companies.length} total.</p>
+      <p>Showing <b>{filteredAndSortedCompanies.length}</b> company(s) out of {companies.length} total.</p>
       
-      {/* --- Company List Display --- */}
+    {  /* --- Company List Display --- */}
       <div className='companyList' style={{ marginTop: '20px' }}>
         {filteredAndSortedCompanies.map(company => (
           <div key={company.id} className='company-card' style={{
